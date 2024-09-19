@@ -1,0 +1,27 @@
+site: https://bigfrontend.dev/
+
+--------- solution-1 -----------
+
+import React , {useState} from 'react'
+
+export function App() {
+  let [count,setCount] = useState(0)
+  function HandleClick1(){
+    setCount(count+1)
+  }
+  function HandleClick2(){
+    setCount(count-1)
+  }
+  return (
+    <div>
+      <button onClick={HandleClick2} data-testid="decrement-button">-</button>
+      <button onClick={HandleClick1} data-testid="increment-button">+</button>
+      <p>clicked: {count}</p>
+    </div>
+  )
+}
+
+
+--------- solution-2 -----------
+
+
